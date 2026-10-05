@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reasoning By Alok Sir - Solution</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  }
+
+  body{
+    margin:0;
+      min-height:100vh;
+        background:#071a52;
+          font-family:Arial,Helvetica,sans-serif;
+            color:white;
+              display:flex;
+                justify-content:center;
+                  align-items:center;
+                    padding:20px;
+                    }
+
+                    .card{
+                      width:100%;
+                        max-width:520px;
+                          background:#0b2468;
+                            border:3px solid #ffd900;
+                              border-radius:22px;
+                                padding:28px 20px 24px;
+                                  text-align:center;
+                                    box-shadow:0 8px 30px rgba(0,0,0,.35);
+                                    }
+
+                                    .brand{
+                                      font-size:27px;
+                                        font-weight:900;
+                                          color:white;
+                                            margin-bottom:8px;
+                                            }
+
+                                            .brand span{
+                                              color:#ffd900;
+                                              }
+
+                                              .question{
+                                                font-size:18px;
+                                                  font-weight:700;
+                                                    margin-bottom:24px;
+                                                      color:#f5f5f5;
+                                                      }
+
+                                                      .button{
+                                                        display:block;
+                                                          width:100%;
+                                                            padding:18px 14px;
+                                                              margin:14px 0;
+                                                                border-radius:14px;
+                                                                  text-decoration:none;
+                                                                    color:white;
+                                                                      font-size:20px;
+                                                                        font-weight:800;
+                                                                        }
+
+                                                                        .telegram{
+                                                                          background:#159ee8;
+                                                                          }
+
+                                                                          .whatsapp{
+                                                                            background:#19bd4b;
+                                                                            }
+
+                                                                            .button small{
+                                                                              display:block;
+                                                                                font-size:13px;
+                                                                                  margin-top:5px;
+                                                                                    font-weight:500;
+                                                                                    }
+
+                                                                                    .note{
+                                                                                      margin-top:20px;
+                                                                                        font-size:12px;
+                                                                                          opacity:.75;
+                                                                                          }
+                                                                                          </style>
+                                                                                          </head>
+
+                                                                                          <body>
+
+                                                                                          <div class="card">
+
+                                                                                            <div class="brand">
+                                                                                                REASONING <span>BY ALOK SIR</span>
+                                                                                                  </div>
+
+                                                                                                    <div class="question" id="questionText">
+                                                                                                        Detailed Solution
+                                                                                                          </div>
+
+                                                                                                            <a id="telegramBtn"
+                                                                                                                 class="button telegram"
+                                                                                                                      href="#"
+                                                                                                                           target="_blank"
+                                                                                                                                rel="noopener">
+                                                                                                                                     Read solution on Telegram
+                                                                                                                                          <small>Open Telegram Solution</small>
+                                                                                                                                            </a>
+
+                                                                                                                                              <a id="whatsappBtn"
+                                                                                                                                                   class="button whatsapp"
+                                                                                                                                                        href="#"
+                                                                                                                                                             target="_blank"
+                                                                                                                                                                  rel="noopener">
+                                                                                                                                                                       Read solution on WhatsApp
+                                                                                                                                                                            <small>Open WhatsApp Solution</small>
+                                                                                                                                                                              </a>
+
+                                                                                                                                                                                <div class="note">
+                                                                                                                                                                                    Choose your preferred solution platform.
+                                                                                                                                                                                      </div>
+
+                                                                                                                                                                                      </div>
+
+                                                                                                                                                                                      <script>
+
+                                                                                                                                                                                      const params = new URLSearchParams(window.location.search);
+
+                                                                                                                                                                                      const q = params.get("q") || "";
+                                                                                                                                                                                      const telegram = params.get("t") || "";
+                                                                                                                                                                                      const whatsapp = params.get("w") || "";
+
+                                                                                                                                                                                      document.getElementById("questionText").textContent =
+                                                                                                                                                                                        q ? "BANK - Q " + q + " • Detailed Solution" : "Detailed Solution";
+
+                                                                                                                                                                                        document.getElementById("telegramBtn").href = telegram;
+                                                                                                                                                                                        document.getElementById("whatsappBtn").href = whatsapp;
+
+                                                                                                                                                                                        </script>
+
+                                                                                                                                                                                        </body>
+                                                                                                                                                                                        </html>
