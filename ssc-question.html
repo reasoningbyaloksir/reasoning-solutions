@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SSC Reasoning Solution</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+  font-family:Arial,sans-serif;
+  background:#071b49;
+}
+.card{
+  width:100%;
+  max-width:520px;
+  background:#fff;
+  border-radius:22px;
+  padding:28px 22px;
+  text-align:center;
+  box-shadow:0 10px 35px rgba(0,0,0,.35);
+}
+h1{
+  margin:0 0 8px;
+  color:#09245d;
+  font-size:30px;
+}
+.qno{
+  color:#555;
+  font-size:18px;
+  margin-bottom:24px;
+}
+.btn{
+  display:block;
+  width:100%;
+  padding:17px 15px;
+  margin:14px 0;
+  border-radius:14px;
+  color:white;
+  text-decoration:none;
+  font-size:19px;
+  font-weight:bold;
+}
+.telegram{background:#159bd7}
+.whatsapp{background:#18b94b}
+.note{
+  margin-top:22px;
+  color:#777;
+  font-size:13px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <h1>SSC REASONING</h1>
+  <div class="qno" id="questionNumber">Question</div>
+
+  <a id="telegramBtn" class="btn telegram"
+     href="#" target="_blank" rel="noopener">
+     📲 Read Solution on Telegram
+  </a>
+
+  <a id="whatsappBtn" class="btn whatsapp"
+     href="#" target="_blank" rel="noopener">
+     💬 Read Solution on WhatsApp
+  </a>
+
+  <div class="note">
+    Detailed Solution • SSC Reasoning by Alok Sir
+  </div>
+</div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+
+const q = params.get("q") || "";
+const telegram = params.get("t") || "";
+const whatsapp = params.get("w") || "";
+
+document.getElementById("questionNumber").textContent =
+  q ? "SSC - Q " + q : "SSC Question";
+
+document.getElementById("telegramBtn").href = telegram;
+document.getElementById("whatsappBtn").href = whatsapp;
+</script>
+
+</body>
+</html>
